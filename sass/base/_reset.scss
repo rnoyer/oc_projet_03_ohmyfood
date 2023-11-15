@@ -1,0 +1,18 @@
+// Prevent the gap at bottom of the anchor element
+// when it encapsulate image element.
+img {
+  vertical-align: bottom;
+}
+
+// Reset default margin for body element
+body {
+  margin: 0;
+}
+
+input {
+  all: unset;
+}
+
+a {
+  all: unset;
+}

@@ -1,0 +1,13 @@
+$btn-base-color: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
+$btn-font-color: #FFFFFF;
+
+.btn-primary{
+  border: unset;
+  border-radius: 25px;
+  background: $btn-base-color;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: $btn-font-color;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 13px 18.75px;
+}

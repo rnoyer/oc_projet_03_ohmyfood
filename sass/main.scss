@@ -1,8 +1,14 @@
 // Base
-@import "./base/normalize", "./base/font";
+@import "./base/reset", "./base/normalize", "./base/font";
+
+// Components
+@import "./components/buttons";
 
 // Layout
 @import "./layouts/header", "./layouts/footer";
+
+// Pages
+@import "./pages/home";
 
 // Utils
 @import "./utils/variables";
