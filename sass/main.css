@@ -19,9 +19,11 @@ input {
 }
 input::-moz-placeholder {
   color: #353535;
+  font-weight: 500;
 }
 input::placeholder {
   color: #353535;
+  font-weight: 500;
 }
 
 h1 {
