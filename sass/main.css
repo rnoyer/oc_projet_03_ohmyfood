@@ -8,7 +8,7 @@ figure, input, a {
   all: unset;
 }
 
-body, p, h2, h3 {
+body, p, h2, h3, dl, dd {
   margin: 0;
 }
 
@@ -187,6 +187,29 @@ h1 {
 }
 .b-header #b-header__city-form .header__pin {
   color: #353535;
+}
+
+.b-footer {
+  color: white;
+  font-weight: 500;
+  background-color: #353535;
+  padding: 22px 25px;
+}
+.b-footer dl {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.b-footer dl dt {
+  font-family: shrikhand;
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+.b-footer dl .b-footer__legal-info {
+  font-weight: 400;
+}
+.b-footer img {
+  padding-right: 11px;
 }
 
 .b-home-main {

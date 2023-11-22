@@ -1,0 +1,25 @@
+.b-footer {
+  color: white;
+  font-weight: 500;
+  background-color: $dark-grey;
+  padding: 22px 25px;
+  dl{
+    display: flex ;
+    flex-direction: column;
+    gap: 7px;
+
+    dt {
+      font-family: shrikhand;
+      font-size: 18px;
+      margin-bottom: 9px;
+    }
+
+    .b-footer__legal-info{
+      font-weight: 400;
+    }
+  }
+
+  img{
+    padding-right: 11px;
+  }
+}
