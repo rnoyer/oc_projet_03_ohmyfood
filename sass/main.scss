@@ -3,6 +3,8 @@
 
 // Components
 @import "./components/buttons";
+@import "./components/step";
+@import "./components/card";
 
 // Layout
 @import "./layouts/header", "./layouts/footer";
@@ -12,3 +14,4 @@
 
 // Utils
 @import "./utils/variables";
+@import "./utils/mixins";

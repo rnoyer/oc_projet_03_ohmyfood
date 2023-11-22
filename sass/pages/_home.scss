@@ -1,4 +1,6 @@
-.b-main{
+@import "../utils/mixins";
+
+.b-home-main{
   display: block;
 
   .b-hero{
@@ -10,14 +12,35 @@
     padding: 39px 0 57px 0;
 
     .b-hero__title{
+      font-weight: 700;
       margin-top: 0;
-      padding: 0 50px;
+      padding: 0 48px;
     }
 
-    p{
-      margin: 0 0 27px 0;
+    .b-hero__p{
+      margin: 16px 0 27px 0;
+      padding: 0 18px;
     }
   }
 
+  .b-fonctionnement {
+    @include home-section;
+    padding-right: 8px;
 
+    .b-fonctionnement__steps-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 26px;
+      }
+  }
+  .b-restaurants {
+    @include home-section;
+    background-color: $light-grey;
+
+    .b-restaurants__cards-container {
+      display: flex;
+      flex-direction: column;
+        margin-top: 26px;
+      }
+  }
 }

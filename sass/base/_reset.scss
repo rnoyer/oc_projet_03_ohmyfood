@@ -4,15 +4,10 @@ img {
   vertical-align: bottom;
 }
 
-// Reset default margin for body element
-body {
+figure,input,a{
+  all: unset;
+}
+
+body,p,h2,h3{
   margin: 0;
-}
-
-input {
-  all: unset;
-}
-
-a {
-  all: unset;
 }
