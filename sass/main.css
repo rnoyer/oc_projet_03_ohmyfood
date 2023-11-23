@@ -12,6 +12,12 @@ body, p, h2, h3, dl, dd {
   margin: 0;
 }
 
+a,
+a h1,
+button {
+  cursor: pointer;
+}
+
 input {
   margin-left: 17px;
   height: 100%;
