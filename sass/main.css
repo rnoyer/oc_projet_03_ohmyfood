@@ -92,6 +92,9 @@ h1 {
   align-items: baseline;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
+.b-step .b-step__content:hover .fa-solid {
+  color: #9356DC;
+}
 .b-step .b-step__content .fa-solid {
   font-size: 20px;
   color: #7E7E7E;
@@ -100,9 +103,6 @@ h1 {
 .b-step .b-step__content p {
   font-size: 16px;
   font-weight: 500;
-}
-.b-step .b-step__content .fa-store {
-  color: #9356DC;
 }
 .b-step .b-step__number {
   z-index: 1;
