@@ -1,9 +1,9 @@
 @import '../utils/variables';
 
 @mixin home-section {
-  padding: 48px 0;
+  padding: 48px 17px;
   max-width: $max-width;
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: $breakpoint-min-desktop) {
       flex: 1;
   }
 }
@@ -12,7 +12,7 @@
     background-color: $bg-color;
     width: 100%;
 
-    @media (min-width: $breakpoint-desktop) {
+    @media (min-width: $breakpoint-min-desktop) {
       display: flex;
       justify-content: center;
     }

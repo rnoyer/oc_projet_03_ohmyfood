@@ -3,22 +3,48 @@
   font-weight: 500;
   background-color: $dark-grey;
   padding: 22px 25px;
+  @media (min-width: $breakpoint-min-desktop) {
+    padding: 30px 25px;
+  }
   dl{
     display: flex ;
     flex-direction: column;
     gap: 7px;
+    @media (min-width: $breakpoint-min-desktop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 54px;
+    }
 
     dt {
       font-family: shrikhand;
       font-size: 18px;
       margin-bottom: 9px;
+      @media (min-width: $breakpoint-min-desktop) {
+        order: 1;
+        margin-bottom: unset;
+        width: 138px;
+      }
+    }
+
+    dd{
+      img{
+        vertical-align: baseline;
+      }
+      @media (min-width: $breakpoint-min-desktop) {
+        width: 190px;
+      }
     }
 
     .b-footer__legal-info{
       font-weight: 400;
+      @media (min-width: $breakpoint-min-desktop) {
+        width: 130px;
+      }
     }
   }
-
   img{
     padding-right: 11px;
   }

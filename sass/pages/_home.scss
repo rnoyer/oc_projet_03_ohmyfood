@@ -31,7 +31,7 @@
   .b-fonctionnement {
     @include home-section;
     padding-right: 8px;
-    @media (min-width: $breakpoint-desktop) {
+    @media (min-width: $breakpoint-min-desktop) {
       padding-right: 0;
     }
 
@@ -39,7 +39,7 @@
       display: flex;
       flex-direction: column;
       margin-top: 26px;
-      @media (min-width: $breakpoint-desktop){
+      @media (min-width: $breakpoint-min-desktop){
         flex-direction: row;
         justify-content: space-between;
       }
@@ -57,7 +57,7 @@
       display: flex;
       flex-direction: column;
       margin-top: 26px;
-      @media (min-width: $breakpoint-desktop) {
+      @media (min-width: $breakpoint-min-desktop) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -65,6 +65,13 @@
         grid-column-gap: 50px;
         justify-content: space-between;
       }
+      a {
+        margin-bottom: 18px;
+        @media (min-width: $breakpoint-min-desktop) {
+          margin-bottom: unset;
+          max-width: 490px;
+        }
       }
+    }
   }
 }
