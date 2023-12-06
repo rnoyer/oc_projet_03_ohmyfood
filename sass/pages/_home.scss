@@ -24,24 +24,47 @@
     }
   }
 
+  .b-fonctionnement__background {
+    @include background-main;
+  }
+
   .b-fonctionnement {
     @include home-section;
     padding-right: 8px;
+    @media (min-width: $breakpoint-desktop) {
+      padding-right: 0;
+    }
 
     .b-fonctionnement__steps-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 26px;
-              }
+      display: flex;
+      flex-direction: column;
+      margin-top: 26px;
+      @media (min-width: $breakpoint-desktop){
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
   }
+
+  .b-restaurants__background{
+    @include background-main($light-grey);
+  }
+
   .b-restaurants {
     @include home-section;
-    background-color: $light-grey;
 
     .b-restaurants__cards-container {
       display: flex;
       flex-direction: column;
-        margin-top: 26px;
+      margin-top: 26px;
+      @media (min-width: $breakpoint-desktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+        justify-content: space-between;
+      }
       }
   }
 }

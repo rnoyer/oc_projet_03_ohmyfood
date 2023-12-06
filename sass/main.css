@@ -80,6 +80,11 @@ h1 {
   align-items: center;
   margin-bottom: 25px;
 }
+@media (min-width: 769px) {
+  .b-step {
+    max-width: 334px;
+  }
+}
 .b-step .b-step__content {
   flex: 1;
   position: relative;
@@ -121,12 +126,19 @@ h1 {
 a {
   margin-bottom: 18px;
 }
+@media (min-width: 769px) {
+  a {
+    margin-bottom: unset;
+    max-width: 490px;
+  }
+}
 a .b-card {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   height: 251px;
   background-color: white;
+  cursor: pointer;
 }
 a .b-card .b-card__badge {
   position: absolute;
@@ -241,21 +253,73 @@ a .b-card .b-card__content .b-card__like img {
   margin: 16px 0 27px 0;
   padding: 0 18px;
 }
+.b-home-main .b-fonctionnement__background {
+  background-color: white;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .b-home-main .b-fonctionnement__background {
+    display: flex;
+    justify-content: center;
+  }
+}
 .b-home-main .b-fonctionnement {
-  padding: 48px 20px;
+  padding: 48px 0;
+  max-width: 1080px;
   padding-right: 8px;
+}
+@media (min-width: 769px) {
+  .b-home-main .b-fonctionnement {
+    flex: 1;
+  }
+}
+@media (min-width: 769px) {
+  .b-home-main .b-fonctionnement {
+    padding-right: 0;
+  }
 }
 .b-home-main .b-fonctionnement .b-fonctionnement__steps-container {
   display: flex;
   flex-direction: column;
   margin-top: 26px;
 }
-.b-home-main .b-restaurants {
-  padding: 48px 20px;
+@media (min-width: 769px) {
+  .b-home-main .b-fonctionnement .b-fonctionnement__steps-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.b-home-main .b-restaurants__background {
   background-color: #F6F6F6;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .b-home-main .b-restaurants__background {
+    display: flex;
+    justify-content: center;
+  }
+}
+.b-home-main .b-restaurants {
+  padding: 48px 0;
+  max-width: 1080px;
+}
+@media (min-width: 769px) {
+  .b-home-main .b-restaurants {
+    flex: 1;
+  }
 }
 .b-home-main .b-restaurants .b-restaurants__cards-container {
   display: flex;
   flex-direction: column;
   margin-top: 26px;
+}
+@media (min-width: 769px) {
+  .b-home-main .b-restaurants .b-restaurants__cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=main.css.map */

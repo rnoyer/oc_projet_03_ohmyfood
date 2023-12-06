@@ -2,12 +2,17 @@
 
 a{
   margin-bottom: 18px;
+  @media (min-width: $breakpoint-desktop){
+    margin-bottom: unset;
+    max-width: 490px;
+  }
   .b-card {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     height: 251px;
     background-color: white;
+    cursor: pointer;
 
     .b-card__badge{
       position: absolute;
