@@ -179,7 +179,7 @@ p {
 .b-card .b-card__content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   height: 77px;
 }
 .b-card .b-card__content .b-card__text {
@@ -192,13 +192,15 @@ p {
   font-size: 17px;
 }
 .b-card .b-card__content .b-card__like {
-  padding: 23px 25px;
-  align-self: flex-start;
-}
-.b-card .b-card__content .b-card__like img {
-  border-radius: unset;
+  background: center no-repeat url(../../assets/icons/empty-heart.svg);
+  align-self: center;
   height: 21px;
-  width: auto;
+  width: 22px;
+  margin: 23px 25px;
+  transition: background 250ms;
+}
+.b-card .b-card__content .b-card__like:hover {
+  background: center no-repeat url(../../assets/icons/full-heart.svg);
 }
 
 .b-header {
