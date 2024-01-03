@@ -47,28 +47,7 @@
 
 
     .b-card__like{
-      background: center no-repeat url(
-        /assets/icons/empty-heart.svg);
-      align-self: center;
-      height: 21px;
-      width: 22px;
       margin: 23px 25px;
-      transition: background 250ms;
-      &:hover{
-        background: center no-repeat url(/assets/icons/full-heart.svg);
-      }
     }
-    // .b-card__like{
-    //   padding: 23px 25px;
-    //   align-self: stretch;
-    //   .b-card__heart{
-    //     background:blue; // center url("../../assets/icons/empty-heart.svg");
-    //     height: 21px;
-    //     width: 22px;
-    //   }
-    //   &:hover{
-    //     background: url("../../assets/icons/full-heart.svg");
-    //   }
-    // }
   }
 }
