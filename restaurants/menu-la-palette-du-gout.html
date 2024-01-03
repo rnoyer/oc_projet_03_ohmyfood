@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OhMyFood</title>
+    <link rel="stylesheet" href="/sass/main.css" />
+    <script
+      src="https://kit.fontawesome.com/ab507d6f0f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header class="b-header">
+        <a href="#" class="b-header__logo">
+          <img src="/assets/icons/go-back.svg" />
+          <h1>ohmyfood</h1>
+        </a>
+      </header>
+      <main class="b-restaurant-main">
+        <section class="b-menu-container">
+          <div class="b-menu-container__restaurant-name-section">
+            <h2>La palette du gout</h2>
+            <div class="b-menu-container__like"></div>
+          </div>
+          <article class="b-dishes-section">
+            <h3>Entrées</h3>
+            <article class="b-dish-cards-container">
+              <div class="b-dish-card">
+                <div class="b-dish-card__text">
+                  <h4>Fricassée d'escargots</h4>
+                  <p>Au piment d'Espelette</p>
+                </div>
+                <div class="b-dish-card__price">25€</div>
+                <img
+                  class="b-dish-card__tick"
+                  src="/assets/icons/tick.svg"
+                  alt=""
+                />
+              </div>
+              <div class="b-dish-card">
+                <div class="b-dish-card__text">
+                  <h4>Foie gras de canard mi-cuit</h4>
+                  <p>Et ses copeaux de truffe noire</p>
+                </div>
+                <div class="b-dish-card__price">35€</div>
+                <img
+                  class="b-dish-card__tick"
+                  src="/assets/icons/tick.svg"
+                  alt=""
+                />
+              </div>
+            </article>
+          </article>
+          <button class="btn-primary" type="submit" name="command-btn">
+            Commander
+          </button>
+        </section>
+      </main>
+
+      <footer class="b-footer">
+        <dl>
+          <dt>ohmyfood</dt>
+          <dd>
+            <a href="#"
+              ><img
+                src="/assets/icons/cutelry.svg"
+                alt="cutelry icon"
+              />Proposer un restaurant</a
+            >
+          </dd>
+          <dd>
+            <a href="#"
+              ><img
+                src="/assets/icons/handshake.svg"
+                alt="handshake icon"
+              />Devenir partenaire</a
+            >
+          </dd>
+          <dd class="b-footer__legal-info"><a href="#">Mentions légales</a></dd>
+          <dd class="b-footer__legal-info"><a href="#">Contact</a></dd>
+        </dl>
+      </footer>
+    </div>
+  </body>
+</html>

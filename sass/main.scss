@@ -4,13 +4,15 @@
 // Components
 @import "./components/buttons";
 @import "./components/step";
-@import "./components/card";
+@import "./components/home-restaurant-card";
+@import "./components/dish-card";
 
 // Layout
 @import "./layouts/header", "./layouts/footer";
 
 // Pages
 @import "./pages/home";
+@import "./pages/restaurant";
 
 // Utils
 @import "./utils/variables";

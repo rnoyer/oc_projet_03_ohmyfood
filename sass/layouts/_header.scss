@@ -4,17 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 113px;
-
-  @media (min-width: $breakpoint-min-desktop) {
-      height: 146px;
-    }
 
   .b-header__logo{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 63px;
     margin: 0;
     padding: 0 17px;
     z-index: 0;
@@ -23,11 +19,8 @@
       flex: 1;
       text-align: center;
     }
-    img{
-      display: none;
-    }
     @media (min-width: $breakpoint-min-desktop) {
-        height: 146px;
+        min-height: 96px;
     }
   }
   #b-header__city-form {

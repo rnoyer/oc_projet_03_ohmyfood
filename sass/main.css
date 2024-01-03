@@ -36,6 +36,10 @@ h1 {
   margin: 14px 0 5px 0;
 }
 
+.hidden {
+  display: none;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -192,7 +196,7 @@ p {
   font-size: 17px;
 }
 .b-card .b-card__content .b-card__like {
-  background: center no-repeat url(../../assets/icons/empty-heart.svg);
+  background: center no-repeat url(/assets/icons/empty-heart.svg);
   align-self: center;
   height: 21px;
   width: 22px;
@@ -200,25 +204,20 @@ p {
   transition: background 250ms;
 }
 .b-card .b-card__content .b-card__like:hover {
-  background: center no-repeat url(../../assets/icons/full-heart.svg);
+  background: center no-repeat url(/assets/icons/full-heart.svg);
 }
 
 .b-header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 113px;
-}
-@media (min-width: 769px) {
-  .b-header {
-    height: 146px;
-  }
 }
 .b-header .b-header__logo {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 63px;
   margin: 0;
   padding: 0 17px;
   z-index: 0;
@@ -228,12 +227,9 @@ p {
   flex: 1;
   text-align: center;
 }
-.b-header .b-header__logo img {
-  display: none;
-}
 @media (min-width: 769px) {
   .b-header .b-header__logo {
-    height: 146px;
+    min-height: 96px;
   }
 }
 .b-header #b-header__city-form {
@@ -405,4 +401,21 @@ p {
     margin-bottom: unset;
     max-width: 490px;
   }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.b-restaurant-main {
+  background-image: url(/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.b-restaurant-main .b-menu-container {
+  width: 100%;
+  margin: 235px 0 0 0;
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
 }/*# sourceMappingURL=main.css.map */

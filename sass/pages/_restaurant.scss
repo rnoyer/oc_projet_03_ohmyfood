@@ -1,0 +1,18 @@
+@import "../utils/variables";
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+.b-restaurant-main {
+  // width: 100%;
+  background-image:url(/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-repeat: no-repeat ;
+  background-size: cover;
+  .b-menu-container{
+    width: 100%;
+    margin: 235px 0 0 0;
+    background-color: $white-smoke;
+    border-radius: 40px 40px 0 0;
+  }
+}
