@@ -215,7 +215,7 @@ p {
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   height: 42px;
   padding: 13.5px 15px;
-  margin: 10.5px 0;
+  margin: 10.5px;
   overflow: hidden;
 }
 .b-dish-card__text {
@@ -249,6 +249,7 @@ p {
   margin-right: -15px;
 }
 
+/* margin-left: calc(100% + 26px); */
 .like-icon {
   background: center no-repeat url(../../assets/icons/empty-heart.svg);
   height: 21px;
@@ -456,6 +457,59 @@ p {
   }
 }
 
+.loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #F6F6F6;
+  animation: disapear 300ms 4s both;
+}
+.loading-page .progress-bar {
+  height: 30px;
+  width: 50vw;
+  border: solid #353535 3px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.loading-page .progress-bar .bar {
+  background-color: #9356DC;
+  height: 100%;
+  transform-origin: 0% 50%;
+  animation: progression 3s 1s both;
+}
+
+@keyframes progression {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.1;
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+  }
+  46% {
+    transform: scaleX(0.81);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes disapear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
 .main-container {
   display: flex;
   flex-direction: column;
@@ -484,6 +538,7 @@ p {
   border-radius: 40px 40px 0 0;
   margin-top: -40px;
   padding: 32px 13px 40px 13px;
+  overflow: hidden;
 }
 .b-restaurant-main .b-menu-container__restaurant-name-section {
   display: flex;
@@ -507,6 +562,7 @@ p {
 .b-restaurant-main .b-menu-container .b-dish-section {
   width: 100%;
   max-width: 634px;
+  overflow: hidden;
 }
 .b-restaurant-main .b-menu-container .b-dish-section__title-text {
   font-family: Roboto;
@@ -524,4 +580,6 @@ p {
 .b-restaurant-main .b-menu-container .btn-primary {
   width: 100%;
   max-width: 186px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* margin-left: 1715px; *//*# sourceMappingURL=main.css.map */
