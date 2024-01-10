@@ -2,29 +2,46 @@
 
 .b-dish-card{
   display: flex;
-  flex: 1 0 0;
   justify-content: space-between;
   align-items: center;
   background-color: $white;
   border-radius: 15px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
   height: 42px;
-  padding: 15px;
+  padding: 13.5px 15px;
   margin: 10.5px 0;
+  overflow: hidden;
   &__text{
+    min-width: 0;
+    h4{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
     p{
       font-size: 15px;
       margin-top: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
   &__price{
     align-self: flex-end;
+    margin-left: auto;
     color: $dark-grey;
     font-size: 15px;
     font-weight: 700;
   }
   &__tick{
-    position: absolute;
-    left: 350px;
+    margin-right: -75px;
+    padding-left: 15px;
+    transition: margin 250ms;
+  }
+  $selector : &;
+  &:hover{
+    #{$selector}__tick{
+      margin-right: -15px;
+    }
   }
 }
