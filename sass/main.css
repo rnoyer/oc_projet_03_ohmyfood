@@ -217,7 +217,6 @@ p {
   padding: 13.5px 15px;
   margin: 10.5px;
   overflow: hidden;
-  animation: dish-slidein 500ms both;
 }
 .b-dish-card__text {
   min-width: 0;
@@ -250,14 +249,6 @@ p {
   margin-right: -15px;
 }
 
-@keyframes dish-slidein {
-  from {
-    transform: translateX(calc(100% + 26px));
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 /* margin-left: calc(100% + 26px); */
 .like-icon {
   background: center no-repeat url(../../assets/icons/empty-heart.svg);
@@ -586,7 +577,25 @@ p {
   height: 5px;
   border-bottom: solid #99E2D0 3px;
 }
+.b-restaurant-main .b-menu-container .b-dish-section .b-dish-cards-container.entrees {
+  animation: dish-slidein 250ms both;
+}
+.b-restaurant-main .b-menu-container .b-dish-section .b-dish-cards-container.plats {
+  animation: dish-slidein 250ms 250ms both;
+}
+.b-restaurant-main .b-menu-container .b-dish-section .b-dish-cards-container.desserts {
+  animation: dish-slidein 250ms 500ms both;
+}
 .b-restaurant-main .b-menu-container .btn-primary {
   width: 100%;
   max-width: 186px;
+}
+
+@keyframes dish-slidein {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }/*# sourceMappingURL=main.css.map */

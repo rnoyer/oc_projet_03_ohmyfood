@@ -62,10 +62,28 @@
         height: 5px;
         border-bottom: solid $light-green 3px;
       }
+      .b-dish-cards-container.entrees{
+        animation: dish-slidein 250ms both;
+      }
+      .b-dish-cards-container.plats{
+        animation: dish-slidein 250ms 250ms both;
+      }
+      .b-dish-cards-container.desserts{
+        animation: dish-slidein 250ms 500ms both;
+      }
     }
     .btn-primary{
       width: 100%;
       max-width: 186px;
     }
+  }
+}
+
+@keyframes dish-slidein {
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0%);
   }
 }
