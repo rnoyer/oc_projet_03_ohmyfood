@@ -217,6 +217,7 @@ p {
   padding: 13.5px 15px;
   margin: 10.5px;
   overflow: hidden;
+  animation: dish-slidein 500ms both;
 }
 .b-dish-card__text {
   min-width: 0;
@@ -249,6 +250,14 @@ p {
   margin-right: -15px;
 }
 
+@keyframes dish-slidein {
+  from {
+    transform: translateX(calc(100% + 26px));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 /* margin-left: calc(100% + 26px); */
 .like-icon {
   background: center no-repeat url(../../assets/icons/empty-heart.svg);
@@ -466,7 +475,7 @@ p {
   height: 100%;
   z-index: 2;
   background-color: #F6F6F6;
-  animation: disapear 300ms 4s both;
+  animation: disapear 300ms 3250ms both;
 }
 .loading-page .progress-bar {
   height: 30px;
@@ -479,7 +488,7 @@ p {
   background-color: #9356DC;
   height: 100%;
   transform-origin: 0% 50%;
-  animation: progression 3s 1s both;
+  animation: progression 2500ms 500ms both;
 }
 
 @keyframes progression {
@@ -580,6 +589,4 @@ p {
 .b-restaurant-main .b-menu-container .btn-primary {
   width: 100%;
   max-width: 186px;
-}
-
-/* margin-left: 1715px; *//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

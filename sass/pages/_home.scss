@@ -85,7 +85,7 @@
   height: 100%;
   z-index: 2;
   background-color: $white-smoke;
-  animation: disapear 300ms 4s both;
+  animation: disapear 300ms 3250ms both;
   .progress-bar{
     height: 30px;
     width: 50vw;
@@ -96,7 +96,7 @@
       background-color: $lavender;
       height: 100%;
       transform-origin: 0% 50%;
-      animation: progression 3s 1s both;
+      animation: progression 2500ms 500ms both;
     }
   }
 }
