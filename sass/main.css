@@ -251,7 +251,7 @@ p {
 
 /* margin-left: calc(100% + 26px); */
 .like-icon {
-  background: center no-repeat url(../../assets/icons/empty-heart.svg);
+  background: center no-repeat url(../assets/icons/empty-heart.svg);
   height: 21px;
   width: 22px;
   align-self: center;
