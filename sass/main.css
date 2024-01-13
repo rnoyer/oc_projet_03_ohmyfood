@@ -251,7 +251,7 @@ p {
 
 /* margin-left: calc(100% + 26px); */
 .like-icon {
-  background: center no-repeat url(../assets/icons/empty-heart.svg);
+  background: center no-repeat url(../../assets/icons/empty-heart.svg);
   height: 21px;
   width: 22px;
   align-self: center;
@@ -466,7 +466,7 @@ p {
   height: 100%;
   z-index: 2;
   background-color: #F6F6F6;
-  animation: disapear 300ms 3250ms both;
+  animation: disapear 300ms 3250ms forwards;
 }
 .loading-page .progress-bar {
   height: 30px;
@@ -479,7 +479,7 @@ p {
   background-color: #9356DC;
   height: 100%;
   transform-origin: 0% 50%;
-  animation: progression 2500ms 500ms both;
+  animation: progression 2500ms 500ms backwards;
 }
 
 @keyframes progression {
@@ -506,8 +506,8 @@ p {
     opacity: 1;
   }
   to {
+    visibility: hidden;
     opacity: 0;
-    display: none;
   }
 }
 .main-container {
